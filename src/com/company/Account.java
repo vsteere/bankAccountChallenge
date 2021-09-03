@@ -15,6 +15,7 @@ public class Account {
     }
 
 
+
 //setting up new constructor for population of initial data.
     public Account(int accountNumber, double balance, String customerName, String email, String phone) {
         this.accountNumber = accountNumber;
@@ -23,7 +24,7 @@ public class Account {
         this.email = email;
         this.phone = phone;
 //print out of populated data
-        System.out.println("Accout created. Customer name: " + this.customerName + "; account number: " +
+        System.out.println("Account created. Customer name: " + this.customerName + "; account number: " +
                 this.accountNumber+ "; initial balance: " + this.balance + "; customer phone: " + this.phone +
                 "; customer phone: " + this.phone);
     }
