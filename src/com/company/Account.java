@@ -7,7 +7,27 @@ public class Account {
     private double balance;
     private String customerName;
     private String email;
-    private double phone;
+    private String phone;
+
+    //calling overloaded constructor to populate fields in case they're empty
+    public Account() {
+        this(1235, 0, "default name", "default email", "default phone");
+    }
+
+
+//setting up new constructor for population of initial data.
+    public Account(int accountNumber, double balance, String customerName, String email, String phone) {
+        this.accountNumber = accountNumber;
+        this.balance = balance;
+        this.customerName = customerName;
+        this.email = email;
+        this.phone = phone;
+//print out of populated data
+        System.out.println("Accout created. Customer name: " + this.customerName + "; account number: " +
+                this.accountNumber+ "; initial balance: " + this.balance + "; customer phone: " + this.phone +
+                "; customer phone: " + this.phone);
+    }
+
 
 
     //method to add funds

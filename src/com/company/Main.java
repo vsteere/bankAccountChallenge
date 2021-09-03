@@ -3,7 +3,9 @@ package com.company;
 public class Main {
 
     public static void main(String[] args) {
-	Account action = new Account();
+        //calling constructor to populate initial data
+	Account action = new Account(25455221, 2500, "John Smith",
+            "jsmith@email.com", "(125) 254-2542" );
 
 
 
